@@ -1,6 +1,7 @@
 <div align="center">
 
-<img width="1254" height="1254" alt="raxell_logo" src="https://github.com/user-attachments/assets/33f5e37e-25fb-4932-8f8f-7d7850bd2da0" />
+<img width="500" height="500" alt="raxell_logo (1) (1)" src="https://github.com/user-attachments/assets/142e0359-9cfa-43c2-ad0e-67afcd989651" />
+
 
   <h1 align="center">Hydra Launcher</h1>
 
