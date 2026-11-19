@@ -1,6 +1,6 @@
 <div align="center">
 
-[<img src="https://raw.githubusercontent.com/hydralauncher/hydra/refs/heads/main/resources/icon.png" width="144"/>](https://help.hydralauncher.gg)
+<img width="1254" height="1254" alt="raxell_logo" src="https://github.com/user-attachments/assets/33f5e37e-25fb-4932-8f8f-7d7850bd2da0" />
 
   <h1 align="center">Hydra Launcher</h1>
 
