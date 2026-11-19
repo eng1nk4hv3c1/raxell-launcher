@@ -6,7 +6,7 @@
   <h1 align="center">Hydra Launcher</h1>
 
   <p align="center">
-    <strong>Hydra Launcher is an open-source gaming platform created to be the single tool that you need in order to manage your gaming library, from PC games to the classics. Hydra is written in Node.js (Electron, React, Typescript) and Rust, with libtorrent providing the torrent engine.</strong>
+    <strong>Raxell Launcher is an open-source gaming platform created to be the single tool that you need in order to manage your gaming library, from PC games to the classics. Hydra is written in Node.js (Electron, React, Typescript) and Rust, with libtorrent providing the torrent engine.</strong>
   </p>
 
 [![build](https://img.shields.io/github/actions/workflow/status/hydralauncher/hydra/build.yml)](https://github.com/hydralauncher/hydra/actions)
