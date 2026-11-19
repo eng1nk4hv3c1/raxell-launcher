@@ -3,7 +3,7 @@
 <img width="200" height="200" alt="2fae0b83-1870-4542-a155-5efb6cc8860a (1)" src="https://github.com/user-attachments/assets/cb81fbcd-45a5-45e8-bf31-33d87697ba34" />
 
 
-  <h1 align="center">Hydra Launcher</h1>
+  <h1 align="center">Raxell Launcher</h1>
 
   <p align="center">
     <strong>Raxell Launcher is an open-source gaming platform created to be the single tool that you need in order to manage your gaming library, from PC games to the classics. Hydra is written in Node.js (Electron, React, Typescript) and Rust, with libtorrent providing the torrent engine.</strong>
@@ -54,7 +54,7 @@
 - Steam and Epic achievements merged into a single list per game
 - RetroAchievements integration for classic games, plus trophy tracking in RPCS3 and shadPS4
 
-### Hydra Cloud
+### Raxell Cloud
 
 - Save your game progress in the cloud, with automatic sync and conflict resolution
 - Cloud saves for emulator games, memory cards included
