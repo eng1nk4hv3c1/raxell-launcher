@@ -96,7 +96,7 @@ On Windows x64 and Linux x64, the libtorrent bridge comes prebuilt from `native/
 
 ## Contributors
 
-<a href="https://github.com/hydralauncher/hydra/graphs/contributors">
+<a href="[https://github.com/eng1nk4hv3c1/raxell-launcher/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=hydralauncher/hydra" />
 </a>
 
