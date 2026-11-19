@@ -1,102 +1,331 @@
+# RAXEL LAUNCHER
+
 <div align="center">
 
-<img width="200" height="200" alt="2fae0b83-1870-4542-a155-5efb6cc8860a (1)" src="https://github.com/user-attachments/assets/cb81fbcd-45a5-45e8-bf31-33d87697ba34" />
+  <img width="180" height="180" alt="RAXEL Launcher Logo" src="https://github.com/user-attachments/assets/cb81fbcd-45a5-45e8-bf31-33d87697ba34" />
 
-
-  <h1 align="center">Raxell Launcher</h1>
+  <h1 align="center">RAXEL LAUNCHER</h1>
 
   <p align="center">
-    <strong>Raxell Launcher is an open-source gaming platform created to be the single tool that you need in order to manage your gaming library, from PC games to the classics. Hydra is written in Node.js (Electron, React, Typescript) and Rust, with libtorrent providing the torrent engine.</strong>
+    <strong>One Library. Every Achievement. Your Cloud.</strong>
   </p>
 
-[![build](https://img.shields.io/github/actions/workflow/status/hydralauncher/hydra/build.yml)](https://github.com/hydralauncher/hydra/actions)
-[![release](https://img.shields.io/github/package-json/v/hydralauncher/hydra)](https://github.com/hydralauncher/hydra/releases)
-[![chocolatey](https://img.shields.io/chocolatey/v/hydralauncher.svg)](https://community.chocolatey.org/packages/hydralauncher)
-[![aur](https://img.shields.io/aur/version/hydra-launcher-bin)](https://aur.archlinux.org/packages/hydra-launcher-bin)
+  <p align="center">
+    Your games. Your achievements. Your saves. All in one place.
+  </p>
 
-![Hydra Launcher Home Page](./docs/screenshot.png)
+  <p align="center">
+    <a href="https://github.com/eng1nk4hv3c1/raxell-launcher">GitHub Repository</a>
+    ·
+    <a href="#features">Features</a>
+    ·
+    <a href="#roadmap">Roadmap</a>
+    ·
+    <a href="#building-from-source">Build from Source</a>
+  </p>
+
+  ![License](https://img.shields.io/github/license/eng1nk4hv3c1/raxell-launcher?style=flat-square)
+  ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-red?style=flat-square)
+  ![Status](https://img.shields.io/badge/status-in%20development-orange?style=flat-square)
+  ![Open Source](https://img.shields.io/badge/open%20source-yes-red?style=flat-square)
 
 </div>
 
+---
+
+## About RAXEL
+
+**RAXEL Launcher** is an open-source gaming platform designed to bring your entire gaming experience into one place.
+
+Manage your PC games, discover your library, track achievements, organize your saves, and keep your gaming progress synchronized across devices.
+
+Built on the existing Hydra Launcher technology stack, RAXEL aims to preserve proven functionality while introducing its own identity, architecture improvements, and cloud ecosystem.
+
+RAXEL is developed using:
+
+- **Electron** for the desktop application.
+- **React** for the user interface.
+- **TypeScript** for application logic.
+- **Rust** for native functionality and performance.
+- **SQLite** for local data management.
+- **libtorrent** for the existing torrent engine.
+
+RAXEL follows an offline-first philosophy: your library and local data remain accessible even when you are disconnected from the internet.
+
 ## Features
 
-### Library
+> RAXEL is actively under development. The features below describe the existing upstream functionality being retained, the planned RAXEL functionality, and the direction of the project. Not every feature is currently available in RAXEL.
 
-- Add games you own, or any executable as a custom game, and organize them with collections, favorites and pins
-- Import your Steam library, playtime and achievements by connecting your Steam account
-- Link your Epic Games account to import, install and launch your Epic library
-- Scan your drives for games that are already installed
-- Track playtime for everything you launch through Hydra
-- Customize covers, heroes, logos and icons, or pick artwork from SteamGridDB
-- Create desktop and Steam shortcuts for any game
+### 🎮 Game Library
 
-### Catalogue
+A unified place for your games.
 
-- Navigate through a rich catalogue with a powerful suggestion algorithm
-- Discover new games that you haven't played before
-- Read and write reviews, unlocked once you have played a game for a while
-- See ProtonDB ratings on Linux before you install
+- Add custom games and executable files.
+- Organize games with collections and favorites.
+- Import Steam libraries, playtime, and achievements.
+- Connect Epic Games accounts.
+- Scan drives for installed games.
+- Track playtime.
+- Customize game covers, backgrounds, logos, and icons.
+- Create desktop and Steam shortcuts.
 
-### Downloads
+### 🏆 Achievements
 
-- Built-in download manager with a queue, pause and resume, seeding control and automatic extraction
-- Debrid service support for faster downloads
+Your gaming achievements, together in one place.
 
-### Hydra Classics
+- Centralized achievement tracking.
+- Steam and Epic Games achievement integration.
+- In-game achievement notifications.
+- Custom achievement unlock sounds.
+- RetroAchievements support.
+- RPCS3 and shadPS4 trophy tracking.
+- Achievement history and statistics.
 
-- Point Hydra at your ROM folders and get a matched library with covers, metadata and one-click play
-- Works with DuckStation, PCSX2, RPCS3, shadPS4, PPSSPP, Dolphin and RetroArch, and can find or install them for you
-- Recomps: install community recompiled classics that run natively on PC, then point Hydra to your ROM and play
+RAXEL aims to preserve and extend the existing achievement infrastructure rather than unnecessarily rebuilding it from scratch.
 
-### Achievements
+### ☁️ RAXEL Cloud
 
-- Unlock achievements with in-game notifications and a custom unlock sound
-- Steam and Epic achievements merged into a single list per game
-- RetroAchievements integration for classic games, plus trophy tracking in RPCS3 and shadPS4
+**Your cloud. Your storage. Your control.**
 
-### Raxell Cloud
+RAXEL Cloud is designed around a simple principle: users should be able to use their own cloud storage accounts instead of depending on a subscription-based storage service operated by RAXEL.
 
-- Save your game progress in the cloud, with automatic sync and conflict resolution
-- Cloud saves for emulator games, memory cards included
-- Save your achievements on the cloud, then show and compare them with other users
-- Souvenirs: a screenshot saved at the moment an achievement unlocks
-- Animated profile pictures and banners
+Planned integrations:
 
-### Social
+- Google Drive
+- MEGA
+- Microsoft OneDrive
+- Dropbox
+- WebDAV
+- SFTP
 
-- Have a nice profile that shows what you are playing to your friends, with visibility controls
-- Add friends by friend code and chat with them without leaving the launcher
-- Capture screenshots with a hotkey or your gamepad, then share them on your profile
-- Climb the leaderboards for playtime, achievements, sessions and more
+Planned capabilities:
 
-### Everything else
+- Automatic game save backups.
+- Cross-device save synchronization.
+- Manual backup and restore.
+- Multiple cloud providers.
+- Primary and secondary storage configuration.
+- Backup version history.
+- File integrity verification.
+- Conflict detection and resolution.
+- Emulator save and memory card backups.
 
-- Big Picture mode for controller-first play on the TV or a handheld
-- Decky Loader plugin for Steam Deck
-- Run Windows games on Linux through Proton and UMU, with per-game Proton versions, Wine prefixes, Winetricks, GameMode and MangoHud
-- Custom themes with a built-in editor and a theme store
-- Available in more than 30 languages
+**No mandatory RAXEL storage subscription. No required RAXEL-hosted save storage.**
 
-## Build from source and contributing
+Your cloud accounts remain yours.
 
-Please, refer to our Documentation pages: [docs.hydralauncher.gg](https://docs.hydralauncher.gg/knowledge)
+### 💾 Save Management
 
-Official builds are published for Windows and Linux only. There are no official macOS builds for now.
+Protect your gaming progress.
 
-### Local development requirements
+- Automatic save discovery.
+- Game save backup and restore.
+- Manual save directory configuration.
+- Scheduled backups.
+- Save version history.
+- Cloud synchronization.
+- Conflict resolution.
+- File integrity verification.
 
-- Node.js + Yarn
-- Rust toolchain (for `hydra-native`)
-- Git and a C++ toolchain (Visual Studio C++ Build Tools on Windows, GCC/Clang on Linux). The native build obtains CMake and CTest automatically through vcpkg.
+Existing save management components, including compatible Ludusavi functionality, will be reused wherever practical.
 
-After installing dependencies, `postinstall` builds the Rust native addon automatically (`hydra-native/hydra-native.node`).
+### 🕹️ Classic Games & Emulation
 
-The native build includes a Rust wrapper around pinned libtorrent. Development and packaged torrenting no longer require Python.
+Bring your classic games into the same library.
 
-On Windows x64 and Linux x64, the libtorrent bridge comes prebuilt from `native/torrent-bridge/prebuilt`, so installs skip compiling libtorrent through vcpkg. Other platforms build it from source. When a branch push changes `native/torrent-bridge` or `scripts/build-torrent-bridge.cjs`, the "Torrent bridge prebuilts" workflow rebuilds the binaries and commits them to that branch; until then, installs build the bridge from source. Set `HYDRA_TORRENT_BRIDGE_FROM_SOURCE=1` to always build it from source.
+The project aims to retain and extend existing emulator integrations, including:
 
+- DuckStation
+- PCSX2
+- RPCS3
+- shadPS4
+- PPSSPP
+- Dolphin
+- RetroArch
 
+Planned functionality includes ROM library scanning, metadata matching, artwork, emulator management, and unified game launching.
+
+### 📊 Statistics
+
+Understand your gaming activity.
+
+Planned statistics include:
+
+- Total games.
+- Total playtime.
+- Achievement progress.
+- Recently played games.
+- Most played games.
+- Gaming activity history.
+
+### 🎨 Personalization
+
+Make RAXEL yours.
+
+- Dark-themed interface.
+- Customizable appearance.
+- Modern red-accented visual identity.
+- Interface localization.
+- Custom game artwork.
+- Configurable notifications.
+
+---
+
+## Roadmap
+
+RAXEL is being developed incrementally, with an emphasis on reliability and preserving existing functionality.
+
+| Phase | Development goal | Status |
+|---|---|---|
+| 1 | Repository audit and architecture analysis | Planned |
+| 2 | RAXEL branding and application identity | In progress |
+| 3 | Preserve existing game library and integrations | In progress |
+| 4 | Achievement system integration | Planned |
+| 5 | Cloud provider architecture | Planned |
+| 6 | Cloud Save backup and restore | Planned |
+| 7 | Multi-provider synchronization | Planned |
+| 8 | Cloud achievement backup | Planned |
+| 9 | UI/UX improvements | Planned |
+| 10 | Security, performance and testing | Planned |
+
+Roadmap statuses will be updated as features are implemented and verified.
+
+## Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| Electron | Desktop application |
+| React | User interface |
+| TypeScript | Application development |
+| Rust | Native functionality |
+| SQLite | Local database |
+| libtorrent | Torrent engine |
+| Ludusavi | Game save management integration |
+
+## Privacy & Security
+
+Your data belongs to you.
+
+RAXEL is designed with privacy and local data ownership in mind.
+
+Our development priorities include:
+
+- Local-first data management.
+- Secure credential storage.
+- OAuth-based authentication where supported.
+- No hardcoded API secrets.
+- No unnecessary collection of personal information.
+- Secure cloud synchronization.
+- File integrity verification.
+- Safe backup and restore operations.
+
+Cloud provider credentials should be stored using appropriate operating system security facilities rather than plaintext configuration files.
+
+## Building from Source
+
+RAXEL is built on the Electron, React, TypeScript, and Rust ecosystem.
+
+### Requirements
+
+- Node.js
+- Yarn
+- Rust toolchain
+- Git
+- C++ build tools
+
+**Windows:**
+- Visual Studio C++ Build Tools.
+
+**Linux:**
+- GCC or Clang.
+- Required system development libraries.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/eng1nk4hv3c1/raxell-launcher.git
+
+cd raxell-launcher
+```
+
+Install dependencies:
+
+```bash
+yarn install
+```
+
+Start development mode:
+
+```bash
+yarn dev
+```
+
+### Build
+
+Run the project build:
+
+```bash
+yarn build
+```
+
+Windows build:
+
+```bash
+yarn build:win
+```
+
+Linux build:
+
+```bash
+yarn build:linux
+```
+
+Available scripts and platform-specific requirements may change as development progresses. Refer to `package.json` for the current commands.
+
+## Project Origins & Attribution
+
+RAXEL is an independent project derived from the open-source Hydra Launcher codebase.
+
+The project retains and builds upon existing upstream technologies and components where appropriate.
+
+We respect the original authors, contributors, licenses, and attribution requirements.
+
+RAXEL is not an official Hydra Launcher product and is not affiliated with the original Hydra Launcher project.
+
+Original project:
+
+https://github.com/hydralauncher/hydra
+
+## Contributing
+
+Contributions, bug reports, ideas, and suggestions are welcome.
+
+If you want to contribute:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Test your changes.
+5. Submit a pull request.
+
+Please keep changes focused, document important architectural decisions, and avoid introducing unnecessary dependencies.
 
 ## License
 
-Raxell is licensed under the [MIT License](LICENSE).
+RAXEL uses the MIT License, subject to the actual license files and applicable upstream licensing obligations.
+
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+  **RAXEL LAUNCHER**
+
+  *One Library. Every Achievement. Your Cloud.*
+
+  Built for gamers. Designed for freedom.
+
+</div>
